@@ -1,29 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <title>Global Infotech | Refurbished Laptops</title>
 
-<!-- WEBSITE PREVIEW LOGO -->
-<link rel="icon" type="image/png" href="logo.png">
+<!-- WEBSITE PREVIEW -->
+<link rel="icon" type="image/png" href="logo.png" />
 
-<!-- SOCIAL MEDIA PREVIEW -->
-<meta property="og:title" content="Global Infotech">
-<meta property="og:description" content="Affordable Laptops • Trusted Quality • Expert Support">
-<meta property="og:image" content="https://terasynctech.github.io/globalinfotech-ranchi/logo.png">
-<meta property="og:url" content="https://terasynctech.github.io/globalinfotech-ranchi/">
-<meta property="og:site_name" content="Global Infotech">
-<meta property="og:type" content="website">
+<!-- SOCIAL PREVIEW -->
+<meta property="og:title" content="Global Infotech" />
+<meta property="og:description" content="Refurbished Laptops • Trusted Quality • Affordable Prices" />
+<meta property="og:image" content="https://terasynctech.github.io/globalinfotech-ranchi/logo.png" />
+<meta property="og:type" content="website" />
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Global Infotech">
-<meta name="twitter:description" content="Affordable Laptops • Trusted Quality • Expert Support">
-<meta name="twitter:image" content="https://terasynctech.github.io/globalinfotech-ranchi/logo.png">
-
-<!-- GOOGLE FONTS -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- GOOGLE FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
 <!-- FONT AWESOME -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
@@ -39,12 +32,12 @@ scroll-behavior:smooth;
 
 body{
 font-family:'Poppins',sans-serif;
-background:#050816;
+background:#050505;
 overflow-x:hidden;
 color:#fff;
 }
 
-/* BACKGROUND EFFECTS */
+/* BACKGROUND */
 
 body::before{
 content:'';
@@ -52,8 +45,8 @@ position:fixed;
 width:100%;
 height:100%;
 background:
-radial-gradient(circle at top left,#7c3aed66,transparent 35%),
-radial-gradient(circle at bottom right,#06b6d466,transparent 35%);
+radial-gradient(circle at top left,#ffb30022,transparent 30%),
+radial-gradient(circle at bottom right,#ffcc0022,transparent 30%);
 z-index:-2;
 }
 
@@ -62,8 +55,8 @@ content:'';
 position:fixed;
 width:100%;
 height:100%;
-background:url('https://www.transparenttextures.com/patterns/stardust.png');
-opacity:.08;
+background:url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
+opacity:.12;
 z-index:-1;
 }
 
@@ -72,23 +65,25 @@ z-index:-1;
 .hero{
 min-height:100vh;
 display:flex;
-justify-content:center;
 align-items:center;
-padding:40px 20px;
+justify-content:center;
+padding:60px 20px;
 }
 
 .hero-container{
-max-width:1200px;
+max-width:1250px;
 width:100%;
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:50px;
+gap:60px;
 align-items:center;
 }
 
+/* LOGO */
+
 .logo{
 width:100%;
-max-width:420px;
+max-width:450px;
 animation:float 4s ease-in-out infinite;
 filter:drop-shadow(0 0 30px #facc15);
 }
@@ -99,65 +94,85 @@ filter:drop-shadow(0 0 30px #facc15);
 100%{transform:translateY(0px);}
 }
 
+/* TEXT */
+
 .hero-text h1{
-font-size:72px;
+font-size:82px;
 font-weight:800;
-line-height:1;
-background:linear-gradient(90deg,#38bdf8,#c084fc,#f472b6);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
+line-height:0.95;
+color:#facc15;
+text-transform:uppercase;
+letter-spacing:2px;
+text-shadow:0 0 25px rgba(250,204,21,.35);
 }
 
 .hero-text h2{
-font-size:28px;
-font-weight:400;
-margin-top:12px;
-color:#cbd5e1;
+font-size:30px;
+font-weight:500;
+margin-top:15px;
+color:#ffffff;
+letter-spacing:1px;
 }
 
-.tagline{
-margin-top:25px;
+.hero-text p{
+margin-top:20px;
 font-size:20px;
-font-weight:500;
+color:#d4d4d4;
+line-height:1.8;
 }
+
+/* BUTTONS */
 
 .buttons{
-margin-top:35px;
+margin-top:40px;
 display:flex;
 flex-wrap:wrap;
-gap:15px;
+gap:18px;
 }
 
 .btn{
-padding:15px 28px;
+padding:16px 32px;
 border-radius:50px;
 text-decoration:none;
+font-size:16px;
 font-weight:600;
-transition:.4s;
 display:flex;
 align-items:center;
 gap:10px;
+transition:.4s;
 }
 
 .btn-call{
-background:linear-gradient(90deg,#06b6d4,#3b82f6);
-color:#fff;
+background:linear-gradient(90deg,#facc15,#ff9800);
+color:#000;
 }
 
 .btn-whatsapp{
-background:linear-gradient(90deg,#22c55e,#16a34a);
+background:#25D366;
 color:#fff;
 }
 
 .btn-location{
 background:rgba(255,255,255,.08);
-border:1px solid rgba(255,255,255,.15);
-backdrop-filter:blur(15px);
+border:1px solid rgba(255,255,255,.1);
+backdrop-filter:blur(12px);
 color:#fff;
 }
 
 .btn:hover{
 transform:translateY(-5px) scale(1.03);
+}
+
+/* SECTION */
+
+.section-title{
+text-align:center;
+font-size:52px;
+font-weight:800;
+margin-bottom:60px;
+color:#facc15;
+text-transform:uppercase;
+letter-spacing:1px;
 }
 
 /* FEATURES */
@@ -166,60 +181,50 @@ transform:translateY(-5px) scale(1.03);
 padding:80px 20px;
 }
 
-.section-title{
-text-align:center;
-font-size:45px;
-font-weight:800;
-margin-bottom:60px;
-background:linear-gradient(90deg,#38bdf8,#c084fc);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-}
-
 .feature-grid{
 max-width:1200px;
 margin:auto;
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
 }
 
 .card{
-background:rgba(255,255,255,.08);
-border:1px solid rgba(255,255,255,.1);
-backdrop-filter:blur(18px);
-padding:35px;
-border-radius:30px;
-transition:.4s;
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,204,0,.15);
+backdrop-filter:blur(14px);
+padding:40px 30px;
+border-radius:28px;
 text-align:center;
+transition:.4s;
 }
 
 .card:hover{
 transform:translateY(-10px);
-box-shadow:0 0 30px rgba(168,85,247,.5);
+box-shadow:0 0 25px rgba(250,204,21,.25);
 }
 
 .card i{
-font-size:45px;
-margin-bottom:20px;
-background:linear-gradient(90deg,#38bdf8,#c084fc);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
+font-size:52px;
+margin-bottom:22px;
+color:#facc15;
 }
 
 .card h3{
-font-size:24px;
-margin-bottom:10px;
+font-size:26px;
+margin-bottom:12px;
+color:#fff;
 }
 
 .card p{
-color:#cbd5e1;
+color:#cfcfcf;
+line-height:1.7;
 }
 
 /* BRANDS */
 
 .brands{
-padding:60px 20px;
+padding:70px 20px;
 }
 
 .brand-wrap{
@@ -227,76 +232,80 @@ max-width:1000px;
 margin:auto;
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-gap:20px;
+gap:25px;
 }
 
 .brand{
-background:rgba(255,255,255,.08);
-padding:30px;
-text-align:center;
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,204,0,.15);
+padding:35px;
 border-radius:25px;
-font-size:28px;
+font-size:30px;
 font-weight:700;
+text-align:center;
+color:#facc15;
 transition:.4s;
-backdrop-filter:blur(10px);
 }
 
 .brand:hover{
-background:linear-gradient(90deg,#7c3aed,#06b6d4);
 transform:scale(1.05);
+background:#facc15;
+color:#000;
 }
 
 /* GALLERY */
 
 .gallery{
-padding:80px 20px;
+padding:90px 20px;
 }
 
 .gallery-grid{
 max-width:1200px;
 margin:auto;
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
 }
 
 .gallery img{
 width:100%;
-height:250px;
+height:260px;
 object-fit:cover;
-border-radius:25px;
+border-radius:30px;
 transition:.4s;
+border:2px solid rgba(255,204,0,.15);
 }
 
 .gallery img:hover{
 transform:scale(1.04);
+box-shadow:0 0 25px rgba(250,204,21,.25);
 }
 
 /* FOOTER */
 
 .footer{
-padding:60px 20px;
+padding:70px 20px;
 text-align:center;
+border-top:1px solid rgba(255,255,255,.08);
 }
 
 .footer h2{
-font-size:40px;
+font-size:48px;
 font-weight:800;
-background:linear-gradient(90deg,#38bdf8,#c084fc);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
+color:#facc15;
 }
 
 .footer p{
-margin-top:15px;
-color:#cbd5e1;
+margin-top:18px;
+color:#d4d4d4;
+font-size:18px;
 }
 
 .socials{
-margin-top:30px;
+margin-top:35px;
 display:flex;
 justify-content:center;
-gap:20px;
+gap:18px;
 }
 
 .socials a{
@@ -306,19 +315,30 @@ border-radius:50%;
 display:flex;
 align-items:center;
 justify-content:center;
-text-decoration:none;
 font-size:24px;
-background:rgba(255,255,255,.08);
-color:#fff;
+text-decoration:none;
+background:rgba(255,255,255,.06);
+color:#facc15;
 transition:.4s;
 }
 
 .socials a:hover{
-background:linear-gradient(90deg,#7c3aed,#06b6d4);
+background:#facc15;
+color:#000;
 transform:translateY(-5px);
 }
 
-/* RESPONSIVE */
+/* POWERED */
+
+.powered{
+margin-top:35px;
+font-size:14px;
+color:#999;
+letter-spacing:2px;
+text-transform:uppercase;
+}
+
+/* MOBILE */
 
 @media(max-width:900px){
 
@@ -331,12 +351,25 @@ text-align:center;
 font-size:52px;
 }
 
+.hero-text h2{
+font-size:24px;
+}
+
+.hero-text p{
+font-size:17px;
+}
+
 .buttons{
 justify-content:center;
 }
 
 .logo{
 margin:auto;
+max-width:320px;
+}
+
+.section-title{
+font-size:38px;
 }
 
 }
@@ -353,19 +386,18 @@ margin:auto;
 <div class="hero-container">
 
 <div>
-
 <img src="logo.png" alt="Global Infotech Logo" class="logo">
-
 </div>
 
 <div class="hero-text">
 
-<h1>GLOBAL INFOTECH</h1>
+<h1>GLOBAL<br>INFOTECH</h1>
 
 <h2>The Digital Destination</h2>
 
-<p class="tagline">
-Affordable Laptops • Trusted Quality • Expert Support
+<p>
+Premium Refurbished Laptops <br>
+Trusted Quality • Affordable Prices • Best Performance
 </p>
 
 <div class="buttons">
@@ -404,19 +436,19 @@ Visit Store
 <div class="card">
 <i class="fa-solid fa-shield-halved"></i>
 <h3>Trusted Quality</h3>
-<p>Premium quality tested refurbished laptops.</p>
+<p>All laptops are tested and quality checked before delivery.</p>
 </div>
 
 <div class="card">
 <i class="fa-solid fa-tags"></i>
 <h3>Affordable Prices</h3>
-<p>Best value laptops within your budget.</p>
+<p>Get premium branded laptops at budget friendly prices.</p>
 </div>
 
 <div class="card">
 <i class="fa-solid fa-laptop"></i>
 <h3>Ready To Use</h3>
-<p>Perfect for work, study & entertainment.</p>
+<p>Perfect for office work, online classes and entertainment.</p>
 </div>
 
 </div>
@@ -448,11 +480,11 @@ Visit Store
 
 <div class="gallery-grid">
 
-<img src="https://images.pexels.com/photos/18105/pexels-photo.jpg">
+<img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=1200&auto=format&fit=crop" alt="Laptop">
 
-<img src="https://images.pexels.com/photos/7974/pexels-photo.jpg">
+<img src="https://images.unsplash.com/photo-1517336714739-489689fd1ca8?q=80&w=1200&auto=format&fit=crop" alt="Laptop">
 
-<img src="https://images.pexels.com/photos/205421/pexels-photo-205421.jpeg">
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" alt="Laptop">
 
 </div>
 
@@ -484,12 +516,7 @@ Beside Wool House, Main Road, Ranchi (Jharkhand)
 
 </div>
 
-<div style="
-margin-top:35px;
-font-size:14px;
-color:#94a3b8;
-letter-spacing:1px;
-">
+<div class="powered">
 Powered By Terasync Tech
 </div>
 
